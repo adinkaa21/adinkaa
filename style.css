@@ -1,0 +1,242 @@
+/* Mengatur ukuran semua elemen */
+* {
+    box-sizing: border-box;
+}
+
+/* Tampilan dasar halaman */
+body {
+
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #d89999;
+    background-color: #fff7fa;
+}
+
+/* Header */
+header {
+    padding: 20px 10%;
+    color: white;
+    background-color: #f7a8c4;
+}
+
+/* Navigasi */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Judul website */
+nav h1 {
+    margin: 0;
+}
+
+/* Daftar menu */
+nav ul {
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Tautan menu */
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Efek saat menu disentuh kursor */
+nav a:hover {
+    color: #ff8fbc;
+}
+
+/* Bagian pembuka */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 10%;
+    background-color: #ffeaf2;
+}
+
+/* Bagian teks pembuka */
+.hero-teks {
+    flex: 1;
+}
+
+/* Tulisan kecil di atas judul */
+.label {
+    margin-bottom: 10px;
+    color: #ec6fa3;
+    font-weight: bold;
+}
+
+/* Judul utama */
+.hero h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 46px;
+    line-height: 1.2;
+}
+
+/* Paragraf pembuka */
+.hero-teks p {
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Tombol */
+.tombol {
+    display: inline-block;
+    padding: 12px 22px;
+    color: white;
+    background-color: #ec6fa3;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Efek tombol */
+.tombol:hover {
+    background-color: #e65a95;
+}
+
+/* Bagian gambar */
+.hero-gambar {
+    flex: 1;
+    text-align: center;
+}
+
+/* Foto */
+.hero-gambar img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.25);
+}
+
+/* Bagian layanan */
+.layanan {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+/* Judul layanan */
+.layanan h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 34px;
+}
+
+/* Deskripsi layanan */
+.deskripsi-bagian {
+    margin-bottom: 30px;
+    color: #64748b;
+}
+
+/* Tempat kartu layanan */
+.daftar-layanan {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Kartu layanan */
+.kartu {
+    flex: 1;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(15, 23, 42, 0.08);
+}
+
+/* Judul kartu */
+.kartu h3 {
+    margin-top: 0;
+    color: #ec6fa3;
+}
+
+/* Paragraf kartu */
+.kartu p {
+    line-height: 1.6;
+}
+
+/* Bagian kontak */
+.kontak {
+    padding: 70px 10%;
+    text-align: center;
+    background-color: #ffe4ee;
+}
+
+/* Judul kontak */
+.kontak h2 {
+    margin-top: 0;
+    font-size: 34px;
+}
+
+/* Kotak informasi kontak */
+.informasi-kontak {
+    max-width: 500px;
+    margin: 30px auto 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(15, 23, 42, 0.08);
+}
+
+/* Footer */
+footer {
+    padding: 25px;
+    color: white;
+
+    text-align: center;
+    background-color: #f08ab5;
+}
+
+/* Jarak paragraf footer */
+footer p {
+    margin: 5px;
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero-gambar img {
+        max-width: 450px;
+    }
+
+    .daftar-layanan {
+        flex-direction: column;
+    }
+}
+
+.tombol{
+transition:transform .18s ease, box-shadow .18s ease, background-color .3s;
+box-shadow:0 8px 18px rgba(236,111,163,.35);
+}
+.tombol:hover{
+transform:translateY(-3px) scale(1.05);
+}
+.tombol:active{
+transform:scale(.92);
+box-shadow:0 3px 8px rgba(236,111,163,.25);
+}
