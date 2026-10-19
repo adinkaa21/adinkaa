@@ -229,14 +229,16 @@ footer p {
     }
 }
 
-.tombol{
-transition:transform .18s ease, box-shadow .18s ease, background-color .3s;
-box-shadow:0 8px 18px rgba(236,111,163,.35);
+.tombol {
+    transition: transform .18s ease, box-shadow .18s ease, background-color .3s;
+    box-shadow: 0 8px 18px rgba(236, 111, 163, .35);
 }
-.tombol:hover{
-transform:translateY(-3px) scale(1.05);
+
+.tombol:hover {
+    transform: translateY(-3px) scale(1.05);
 }
-.tombol:active{
-transform:scale(.92);
-box-shadow:0 3px 8px rgba(236,111,163,.25);
+
+.tombol:active {
+    transform: scale(.92);
+    box-shadow: 0 3px 8px rgba(236, 111, 163, .25);
 }
